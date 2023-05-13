@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="./Styles/Style.css">
 </head>
 
-<body>
-    <h5>Heyy There</h5>
+<body class="relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
+    <main class="w-full flex justify-center items-center flex-col">
+        <nav class='flex justify-between items-center w-full mb-10 pt-3'>
+            <div>
+                <img class="w-14 h-auto object-contain" src="./Images/logo.png" alt="logo">
+            </div>
+            <div class='flex gap-4'>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="rounded-full border border-black bg-black py-3 px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+                    href="https://github.com/AbdulQuayyum/random-cat-facts.git">
+                    Source Code
+                </a>
+            </div>
+        </nav>
+    </main>
+    <h5 class="">Heyy There</h5>
     <script src="./Javascript/Main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </body>
 
 </html>
