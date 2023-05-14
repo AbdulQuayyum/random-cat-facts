@@ -19,7 +19,7 @@ async function randomFact() {
     try {
         const response = await fetch(url, options);
         const result = await response.json();
-        factText.innerText = result[0]
+        factText.innerText = result.Fact
         console.log(result);
         factButton.classList.remove("loading");
         factButton.innerText = "New Fact"
