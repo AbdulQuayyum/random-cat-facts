@@ -28,4 +28,21 @@ async function randomFact() {
     }
 }
 
+speechButton.addEventListener("click", () => {
+    if (!factButton.classList.contains("loading")) {
+        let utterance = new SpeechSynthesisUtterance(`${factText.innerText}`);
+        synth.speak(utterance);
+        setInterval(() => {
+            !synth.speaking ? speechButton.classList.remove("active") : speechButton.classList.add("active");
+        }, 10);
+    }
+})
+
+copyButton.addEventListener("click", () => { navigator.clipboard.writeText(factText.innerText) })
+
+twitterButtonn.addEventListener("click", ()=>{
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${factText.innerText}`;
+    window.open(tweetUrl, "_blank");
+});
+
 factButton.addEventListener('click', randomFact)
