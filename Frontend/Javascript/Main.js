@@ -3,6 +3,7 @@ const factButton = document.querySelector(".new-fact")
 const speechButton = document.querySelector(".speech")
 const copyButton = document.querySelector(".copy")
 const tweetButton = document.querySelector(".twitter")
+const synth = speechSynthesis
 
 async function randomFact() {
     factButton.classList.add("loading")
@@ -22,7 +23,7 @@ async function randomFact() {
         const response = await fetch(url, options);
         const result = await response.json();
         factText.innerText = result.Fact
-        console.log(result);
+        // console.log(result);
         factButton.classList.remove("loading");
         factButton.innerText = "New Fact"
     } catch (error) {
