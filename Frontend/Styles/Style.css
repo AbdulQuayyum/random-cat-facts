@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.main-wrapper header {
+    color: #202842;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+.fact-div i {
+    font-size: 12px;
+}
+
+.fact-div i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.fact-div i:last-child {
+    display: flex;
+    margin: 0 0 3px 10px;
+    align-items: flex-end;
+}
+
+.fact {
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.buttons {
+    display: flex ;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+ .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: #000;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.features ul li:first-child {
+    margin-left: 0;
+}
+
+ul li:is(:hover, .active) {
+    color: #fff;
+    background: #000;
+}
+
+ul .speech.active {
+    pointer-events: none;
+}
+
+.new-fact.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}

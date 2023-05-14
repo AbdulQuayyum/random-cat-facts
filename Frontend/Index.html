@@ -8,6 +8,7 @@
     <title>Random Cat Facts</title>
     <link rel="shortcut icon" href="./Images/logo.png" type="image/png">
     <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body class="relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
@@ -25,10 +26,29 @@
             </div>
         </nav>
     </main>
-    <div>
-        x
+    <div class="main-wrapper flex flex-col justify-center items-center max-w-xl mx-auto sm:p-16 p-6">
+        <header class="text-[#202842]">Random Cat Facts</header>
+        <div class="main-content mt-2 mb-8">
+            <div class="fact-div flex justify-content">
+                <i class="fas fa-quote-left"></i>
+                <p class="fact">Like humans, cats tend to favor one paw over another.
+                </p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="features">
+                <ul>
+                    <li class="speech"><i class="fas fa-volume-up"></i></li>
+                    <li class="copy"><i class="fas fa-copy"></i></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i></li>
+                </ul>
+            </div>
+            <div>
+                <button class="new-fact rounded-full border border-black bg-black py-3 px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">New Fact</button>
+            </div>
+        </div>
     </div>
-    <h5 class="">Heyy There</h5>
     <footer>
         Copyright ©
         <script>document.write(new Date().getFullYear());</script> Abdul-Quayyum Alao
