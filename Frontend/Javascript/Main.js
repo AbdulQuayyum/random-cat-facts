@@ -7,12 +7,14 @@ const tweetButton = document.querySelector(".twitter")
 async function randomFact() {
     factButton.classList.add("loading")
     factButton.innerText = "Loading..."
+    const key = "69a4b5e576mshf422956d6c608b2p1133d8jsnbe0791660dc7"
+    const host = "cat-facts12.p.rapidapi.com"
     const url = 'https://cat-facts12.p.rapidapi.com/Fact';
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '69a4b5e576mshf422956d6c608b2p1133d8jsnbe0791660dc7',
-            'X-RapidAPI-Host': 'cat-facts12.p.rapidapi.com'
+            'X-RapidAPI-Key': key,
+            'X-RapidAPI-Host': host
         }
     };
 
@@ -40,7 +42,7 @@ speechButton.addEventListener("click", () => {
 
 copyButton.addEventListener("click", () => { navigator.clipboard.writeText(factText.innerText) })
 
-twitterButtonn.addEventListener("click", ()=>{
+tweetButton.addEventListener("click", () => {
     let tweetUrl = `https://twitter.com/intent/tweet?url=${factText.innerText}`;
     window.open(tweetUrl, "_blank");
 });
