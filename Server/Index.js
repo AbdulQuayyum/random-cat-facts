@@ -9,10 +9,10 @@ app.get('/', (req, res) => res.json('Hey There, Welcome to Soft Random Cat Fact!
 
 app.get('/Fact', (req, res) => {
     const randomFacts = Facts[Math.floor(Math.random() * Facts.length)]
-    res.json({ "Random Cat fact": randomFacts })
+    res.json({ "Fact": randomFacts })
 })
 
 app.get('/AllFacts', (req, res) => {
-    res.json({ "Cat Facts": Facts })
+    res.json({ "AllFacts": Facts })
 })
 app.listen(port, () => console.log(`Server running on port ${port}!`))
