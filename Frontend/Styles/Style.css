@@ -7,6 +7,12 @@
     font-family: 'Nunito', sans-serif;
 }
 
+*:focus,
+*:active,
+*:hover {
+    outline: none !important;
+}
+
 .main-wrapper {
     border: 1px solid #aaa;
     border-radius: 20px;
@@ -41,7 +47,7 @@
 }
 
 .buttons {
-    display: flex ;
+    display: flex;
     width: 100%;
     align-items: center;
     padding-top: 20px;
@@ -49,7 +55,7 @@
     border-top: 1px solid #ccc;
 }
 
- .features {
+.features {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,6 +78,17 @@
     justify-content: center;
     border: 1px solid #000;
     transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 390px) {
+    .features ul li {
+        height: 35px;
+        width: 35px;
+    }
+
+    .features ul li i {
+        font-size: 12px;
+    }
 }
 
 .features ul li:first-child {
