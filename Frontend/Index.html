@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./Images/logo.png" type="image/png">
     <link rel="stylesheet" href="./Styles/Style.css">
     <link rel="stylesheet" href="./Styles/Spinner.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
@@ -46,17 +47,22 @@
                 </ul>
             </div>
             <div>
-                <button class="new-fact rounded-full border border-black bg-black py-3 px-6 sm:px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">New Fact</button>
+                <button
+                    class="new-fact rounded-full border border-black bg-black py-3 px-6 sm:px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">New
+                    Fact</button>
             </div>
         </div>
     </div>
-    <footer class="mb-10">
+    <footer class="sm:mt-0 mt-4 mb-10">
         Copyright ©
         <script>document.write(new Date().getFullYear());</script> Abdul-Quayyum Alao
     </footer>
+
+    <div class="spinner"></div>
+
     <script src="./Javascript/Main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
 </body>
 
 </html>
