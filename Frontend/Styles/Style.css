@@ -37,7 +37,7 @@
 .fact {
     font-size: 22px;
     text-align: center;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .buttons {

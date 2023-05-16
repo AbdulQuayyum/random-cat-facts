@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body class="relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
+<body class="relative z-10 min-h-screen flex justify-between items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
     <main class="w-full flex justify-center items-center flex-col">
         <nav class='flex justify-between items-center w-full mb-10 pt-3'>
             <div>
-                <img class="w-14 h-auto object-contain" src="./Images/logo.png" alt="logo">
+                <img class="w-12 sm:w-14 h-auto object-contain" src="./Images/logo.png" alt="logo">
             </div>
             <div class='flex gap-4'>
                 <a target="_blank" rel="noopener noreferrer"
@@ -26,8 +26,8 @@
             </div>
         </nav>
     </main>
-    <div class="main-wrapper flex flex-col justify-center items-center max-w-xl mx-auto mt-16 sm:p-16 p-6">
-        <header class="text-[#202842]">Random Cat Facts</header>
+    <div class="main-wrapper flex flex-col justify-center items-center max-w-xl mx-auto sm:p-16 p-6">
+        <header class="text-[#202842] flex items-center text-center">Random Cat Facts</header>
         <div class="main-content mt-2 mb-8">
             <div class="fact-div flex justify-content">
                 <i class="fas fa-quote-left"></i>
@@ -45,11 +45,11 @@
                 </ul>
             </div>
             <div>
-                <button class="new-fact rounded-full border border-black bg-black py-3 px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">New Fact</button>
+                <button class="new-fact rounded-full border border-black bg-black py-3 px-6 sm:px-8 text-sm text-white transition-all hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">New Fact</button>
             </div>
         </div>
     </div>
-    <footer class="mt-16">
+    <footer class="mb-10">
         Copyright ©
         <script>document.write(new Date().getFullYear());</script> Abdul-Quayyum Alao
     </footer>
